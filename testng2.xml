@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="MyLearning">
+<listeners>
+	<listener class-name="ExtentReports.Listeners"></listener>
+</listeners>
+  <test name="Personal Loan">
+  <packages>
+  <package name="SeleniumFramework2.Data"></package>
+  </packages>
+  </test> 
+</suite>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="2" passed="1" failed="1" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-03-18T15:46:21 GMT" name="MyLearning" finished-at="2024-03-18T15:47:00 GMT" duration-ms="39357">
+    <groups>
+    </groups>
+    <test started-at="2024-03-18T15:46:21 GMT" name="Personal Loan" finished-at="2024-03-18T15:47:00 GMT" duration-ms="39357">
+      <class name="SeleniumFramework2.Data.CartMainRun">
+        <test-method is-config="true" signature="PreRun()[pri:0, instance:SeleniumFramework2.Data.CartMainRun@3d3e5463]" started-at="2024-03-18T15:46:21 GMT" name="PreRun" finished-at="2024-03-18T15:46:55 GMT" duration-ms="33817" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- PreRun -->
+        <test-method signature="CartMainRun(java.util.HashMap)[pri:0, instance:SeleniumFramework2.Data.CartMainRun@3d3e5463]" started-at="2024-03-18T15:46:55 GMT" name="CartMainRun" data-provider="cartlogin" finished-at="2024-03-18T15:46:56 GMT" duration-ms="1248" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{password=Lokesh1231, email=kumar@abcd.com}]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [Incorrect email or password.] but found [Login Successfully]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [Incorrect email or password.] but found [Login Successfully]
+at org.testng.Assert.fail(Assert.java:99)
+at org.testng.Assert.failNotEquals(Assert.java:1037)
+at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+at org.testng.Assert.assertEquals(Assert.java:122)
+at org.testng.Assert.assertEquals(Assert.java:629)
+at org.testng.Assert.assertEquals(Assert.java:639)
+at SeleniumFramework2.Data.CartMainRun.CartMainRun(CartMainRun.java:52)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CartMainRun -->
+        <test-method signature="CartMainRun(java.util.HashMap)[pri:0, instance:SeleniumFramework2.Data.CartMainRun@3d3e5463]" started-at="2024-03-18T15:46:57 GMT" name="CartMainRun" data-provider="cartlogin" finished-at="2024-03-18T15:47:00 GMT" duration-ms="3171" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{password=Kumar123, email=kumar@abcde.com}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CartMainRun -->
+      </class> <!-- SeleniumFramework2.Data.CartMainRun -->
+    </test> <!-- Personal Loan -->
+  </suite> <!-- MyLearning -->
+</testng-results>
